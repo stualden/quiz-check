@@ -1,0 +1,3 @@
+student_id,duration_sec,off_switches,total_off_time_sec,avg_off_time_sec,off_time_variance,switch_rate_per_min,mean_gap_sec,std_gap_sec,cv_gap,long_gap_count,burst_count,total_answers,unique_questions,revisions,revision_ratio,max_revisions_single_q
+01,428,15,69,4.6,7.3066666666666675,2.102803738317757,18.9,26.947912720654266,1.425815487865305,2,8,21,20,1,0.047619047619047616,2
+02,552,0,0,0,0,0.0,22.958333333333332,28.46412825333357,1.2398168386207,3,12,25,20,5,0.2,5

@@ -1,0 +1,48 @@
+STUDENT 01
+----------------------------------------
+Final Score: 2.33
+
+Core Behavior:
+  Duration: 428s
+  Off-task time: 69s (0.16)
+  Switch rate: 2.10/min
+
+Timing:
+  Mean gap: 18.90s
+  Variability (CV): 1.43
+  Long gaps: 2
+  Burst count: 8
+
+Patterns:
+  Burst sequences: 0
+  Pause→Burst patterns: 0
+
+Revisions:
+  Revision ratio: 0.05
+  Max per question: 2
+
+
+STUDENT 02
+----------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 552s
+  Off-task time: 0s (0.00)
+  Switch rate: 0.00/min
+
+Timing:
+  Mean gap: 22.96s
+  Variability (CV): 1.24
+  Long gaps: 3
+  Burst count: 12
+
+Patterns:
+  Burst sequences: 4
+  Pause→Burst patterns: 0
+
+Revisions:
+  Revision ratio: 0.20
+  Max per question: 5
+
+
