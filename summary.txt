@@ -1,48 +1,928 @@
 STUDENT 01
-----------------------------------------
-Final Score: 2.33
+--------------------------------------------------
+Final Score: 2.78
 
 Core Behavior:
-  Duration: 428s
-  Off-task time: 69s (0.16)
-  Switch rate: 2.10/min
+  Duration: 540s
+  Off-task time: 12s (0.02 of session)
+  Number of switches: 3
+  Switch density: 0.33 per minute
+  Rapid switches (≤5s away): 2
+  Long switches (≥15s away): 0
 
-Timing:
-  Mean gap: 18.90s
-  Variability (CV): 1.43
-  Long gaps: 2
-  Burst count: 8
+Post-Resume Behavior:
+  Avg time to answer after returning: 4.50s
+  Fast answers after return (≤5s): 1
+  Fast ratio: 0.50 (fraction of returns followed by an answer within 5s)
 
-Patterns:
-  Burst sequences: 0
-  Pause→Burst patterns: 0
+Timing Between Answers:
+  Mean gap: 15.86s (average time between answering questions)
+  Variability (CV): 1.60 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 10 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
 
 Revisions:
-  Revision ratio: 0.05
-  Max per question: 2
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 2
 
 
 STUDENT 02
-----------------------------------------
+--------------------------------------------------
+Final Score: 2.93
+
+Core Behavior:
+  Duration: 398s
+  Off-task time: 22s (0.06 of session)
+  Number of switches: 4
+  Switch density: 0.60 per minute
+  Rapid switches (≤5s away): 1
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 3.75s
+  Fast answers after return (≤5s): 3
+  Fast ratio: 0.75 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 19.55s (average time between answering questions)
+  Variability (CV): 0.57 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 3 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 03
+--------------------------------------------------
+Final Score: 5
+
+Core Behavior:
+  Duration: 355s
+  Off-task time: 177s (0.50 of session)
+  Number of switches: 20
+  Switch density: 3.38 per minute
+  Rapid switches (≤5s away): 5
+  Long switches (≥15s away): 5
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 2.28s
+  Fast answers after return (≤5s): 17
+  Fast ratio: 0.94 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 18.26s (average time between answering questions)
+  Variability (CV): 0.44 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 0 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.00 (fraction of answers that were changed)
+  Max revisions on a single question: 1
+
+
+STUDENT 04
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 516s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 22.00s (average time between answering questions)
+  Variability (CV): 0.78 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 3 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.17 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 05
+--------------------------------------------------
+Final Score: 3.89
+
+Core Behavior:
+  Duration: 485s
+  Off-task time: 68s (0.14 of session)
+  Number of switches: 9
+  Switch density: 1.11 per minute
+  Rapid switches (≤5s away): 3
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 1.60s
+  Fast answers after return (≤5s): 5
+  Fast ratio: 1.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 23.00s (average time between answering questions)
+  Variability (CV): 0.69 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 7 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 2 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 06
+--------------------------------------------------
+Final Score: 4.54
+
+Core Behavior:
+  Duration: 355s
+  Off-task time: 119s (0.34 of session)
+  Number of switches: 26
+  Switch density: 4.39 per minute
+  Rapid switches (≤5s away): 19
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 2.50s
+  Fast answers after return (≤5s): 14
+  Fast ratio: 0.88 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 16.71s (average time between answering questions)
+  Variability (CV): 0.48 (higher = more uneven pacing)
+  Long gaps: 0 (unusually slow responses)
+  Burst count: 3 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 07
+--------------------------------------------------
+Final Score: 1.57
+
+Core Behavior:
+  Duration: 341s
+  Off-task time: 18s (0.05 of session)
+  Number of switches: 2
+  Switch density: 0.35 per minute
+  Rapid switches (≤5s away): 1
+  Long switches (≥15s away): 1
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 28.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 16.80s (average time between answering questions)
+  Variability (CV): 0.84 (higher = more uneven pacing)
+  Long gaps: 3 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 08
+--------------------------------------------------
+Final Score: 4.2
+
+Core Behavior:
+  Duration: 437s
+  Off-task time: 141s (0.32 of session)
+  Number of switches: 14
+  Switch density: 1.92 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 1
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 14
+  Fast ratio: 1.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 21.79s (average time between answering questions)
+  Variability (CV): 0.58 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.00 (fraction of answers that were changed)
+  Max revisions on a single question: 1
+
+
+STUDENT 09
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 565s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 24.39s (average time between answering questions)
+  Variability (CV): 0.64 (higher = more uneven pacing)
+  Long gaps: 3 (unusually slow responses)
+  Burst count: 7 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.17 (fraction of answers that were changed)
+  Max revisions on a single question: 3
+
+
+STUDENT 10
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 570s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 28.50s (average time between answering questions)
+  Variability (CV): 0.85 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 6 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 2 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.10 (fraction of answers that were changed)
+  Max revisions on a single question: 3
+
+
+STUDENT 11
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 545s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 25.67s (average time between answering questions)
+  Variability (CV): 0.61 (higher = more uneven pacing)
+  Long gaps: 3 (unusually slow responses)
+  Burst count: 6 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 12
+--------------------------------------------------
+Final Score: 3.36
+
+Core Behavior:
+  Duration: 366s
+  Off-task time: 43s (0.12 of session)
+  Number of switches: 12
+  Switch density: 1.97 per minute
+  Rapid switches (≤5s away): 10
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 6.20s
+  Fast answers after return (≤5s): 7
+  Fast ratio: 0.70 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 18.89s (average time between answering questions)
+  Variability (CV): 0.83 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 6 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.00 (fraction of answers that were changed)
+  Max revisions on a single question: 1
+
+
+STUDENT 13
+--------------------------------------------------
+Final Score: 3.92
+
+Core Behavior:
+  Duration: 474s
+  Off-task time: 66s (0.14 of session)
+  Number of switches: 18
+  Switch density: 2.28 per minute
+  Rapid switches (≤5s away): 14
+  Long switches (≥15s away): 1
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 7.33s
+  Fast answers after return (≤5s): 8
+  Fast ratio: 0.67 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 17.38s (average time between answering questions)
+  Variability (CV): 0.64 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 7 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 2 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.20 (fraction of answers that were changed)
+  Max revisions on a single question: 3
+
+
+STUDENT 14
+--------------------------------------------------
+Final Score: 1.72
+
+Core Behavior:
+  Duration: 503s
+  Off-task time: 41s (0.08 of session)
+  Number of switches: 6
+  Switch density: 0.72 per minute
+  Rapid switches (≤5s away): 2
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 6.50s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 23.86s (average time between answering questions)
+  Variability (CV): 0.63 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 15
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 352s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 17.50s (average time between answering questions)
+  Variability (CV): 0.75 (higher = more uneven pacing)
+  Long gaps: 4 (unusually slow responses)
+  Burst count: 7 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 16
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 410s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 21.47s (average time between answering questions)
+  Variability (CV): 0.87 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 2 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.00 (fraction of answers that were changed)
+  Max revisions on a single question: 1
+
+
+STUDENT 17
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 563s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 26.71s (average time between answering questions)
+  Variability (CV): 0.76 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 18
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 209s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 10.40s (average time between answering questions)
+  Variability (CV): 0.55 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 3 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 19
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 571s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 24.78s (average time between answering questions)
+  Variability (CV): 0.54 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 2 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.17 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 20
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 452s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 17.38s (average time between answering questions)
+  Variability (CV): 0.56 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 2 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.09 (fraction of answers that were changed)
+  Max revisions on a single question: 3
+
+
+STUDENT 21
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 314s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 14.18s (average time between answering questions)
+  Variability (CV): 0.43 (higher = more uneven pacing)
+  Long gaps: 0 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.13 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 22
+--------------------------------------------------
+Final Score: 2.06
+
+Core Behavior:
+  Duration: 556s
+  Off-task time: 37s (0.07 of session)
+  Number of switches: 4
+  Switch density: 0.43 per minute
+  Rapid switches (≤5s away): 1
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 16.00s
+  Fast answers after return (≤5s): 1
+  Fast ratio: 0.33 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 26.25s (average time between answering questions)
+  Variability (CV): 0.76 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 23
+--------------------------------------------------
+Final Score: 4.0
+
+Core Behavior:
+  Duration: 428s
+  Off-task time: 69s (0.16 of session)
+  Number of switches: 15
+  Switch density: 2.10 per minute
+  Rapid switches (≤5s away): 11
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 6.50s
+  Fast answers after return (≤5s): 11
+  Fast ratio: 0.92 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 18.90s (average time between answering questions)
+  Variability (CV): 1.43 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 8 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 24
+--------------------------------------------------
+Final Score: 4.28
+
+Core Behavior:
+  Duration: 562s
+  Off-task time: 129s (0.23 of session)
+  Number of switches: 24
+  Switch density: 2.56 per minute
+  Rapid switches (≤5s away): 14
+  Long switches (≥15s away): 2
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 5.47s
+  Fast answers after return (≤5s): 11
+  Fast ratio: 0.73 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 25.32s (average time between answering questions)
+  Variability (CV): 0.56 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 4 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.13 (fraction of answers that were changed)
+  Max revisions on a single question: 3
+
+
+STUDENT 25
+--------------------------------------------------
+Final Score: 5
+
+Core Behavior:
+  Duration: 171s
+  Off-task time: 92s (0.54 of session)
+  Number of switches: 15
+  Switch density: 5.26 per minute
+  Rapid switches (≤5s away): 12
+  Long switches (≥15s away): 2
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 2.14s
+  Fast answers after return (≤5s): 14
+  Fast ratio: 1.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 7.16s (average time between answering questions)
+  Variability (CV): 0.76 (higher = more uneven pacing)
+  Long gaps: 1 (unusually slow responses)
+  Burst count: 6 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.00 (fraction of answers that were changed)
+  Max revisions on a single question: 1
+
+
+STUDENT 26
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 346s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 17.20s (average time between answering questions)
+  Variability (CV): 0.56 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 2 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 0 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 27
+--------------------------------------------------
 Final Score: 1
 
 Core Behavior:
   Duration: 552s
-  Off-task time: 0s (0.00)
-  Switch rate: 0.00/min
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
 
-Timing:
-  Mean gap: 22.96s
-  Variability (CV): 1.24
-  Long gaps: 3
-  Burst count: 12
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
 
-Patterns:
-  Burst sequences: 4
-  Pause→Burst patterns: 0
+Timing Between Answers:
+  Mean gap: 22.96s (average time between answering questions)
+  Variability (CV): 1.24 (higher = more uneven pacing)
+  Long gaps: 3 (unusually slow responses)
+  Burst count: 12 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 4 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 0 (long pause followed by rapid answering — possible lookup behavior)
 
 Revisions:
-  Revision ratio: 0.20
-  Max per question: 5
+  Revision ratio: 0.20 (fraction of answers that were changed)
+  Max revisions on a single question: 5
+
+
+STUDENT 28
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 360s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 17.75s (average time between answering questions)
+  Variability (CV): 0.79 (higher = more uneven pacing)
+  Long gaps: 4 (unusually slow responses)
+  Burst count: 6 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 1 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.05 (fraction of answers that were changed)
+  Max revisions on a single question: 2
+
+
+STUDENT 29
+--------------------------------------------------
+Final Score: 1
+
+Core Behavior:
+  Duration: 402s
+  Off-task time: 0s (0.00 of session)
+  Number of switches: 0
+  Switch density: 0.00 per minute
+  Rapid switches (≤5s away): 0
+  Long switches (≥15s away): 0
+
+Post-Resume Behavior:
+  Avg time to answer after returning: 0.00s
+  Fast answers after return (≤5s): 0
+  Fast ratio: 0.00 (fraction of returns followed by an answer within 5s)
+
+Timing Between Answers:
+  Mean gap: 16.62s (average time between answering questions)
+  Variability (CV): 0.72 (higher = more uneven pacing)
+  Long gaps: 2 (unusually slow responses)
+  Burst count: 7 (very fast consecutive answers)
+
+Answering Patterns:
+  Burst sequences: 2 (clusters of multiple rapid answers in a row)
+  Pause→Burst patterns: 1 (long pause followed by rapid answering — possible lookup behavior)
+
+Revisions:
+  Revision ratio: 0.20 (fraction of answers that were changed)
+  Max revisions on a single question: 3
 
 

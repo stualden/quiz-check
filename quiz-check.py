@@ -43,11 +43,15 @@ for block in students:
     off_times = []
     answer_times = []
 
-    # revision tracking
+    # NEW tracking
+    resume_times = []
+    post_resume_answer_times = []
+
     question_counts = {}
     total_answers = 0
 
     last_stop_time = None
+    last_resume_time = None
     current_time = None
 
     # ----------------------------
@@ -57,7 +61,6 @@ for block in students:
     for line in lines:
         line = line.strip()
 
-        # time line
         match_time = re.match(r"^(\d{1,2}:\d{2})$", line)
         if match_time:
             current_time = parse_time(match_time.group(1))
@@ -80,6 +83,8 @@ for block in students:
             if off_duration >= 0:
                 off_times.append(off_duration)
 
+            resume_times.append(resumed_time)
+            last_resume_time = resumed_time
             last_stop_time = None
 
         # ANSWER
@@ -87,14 +92,20 @@ for block in students:
             events.append((sid, current_time, "ANSWER"))
             answer_times.append(current_time)
 
-            # extract question number
+            # track answer after resume
+            if last_resume_time is not None:
+                delta = current_time - last_resume_time
+                if delta >= 0:
+                    post_resume_answer_times.append(delta)
+                last_resume_time = None  # only count first answer after resume
+
+            # question tracking
             m_q = re.search(r"Answered question (\d+)", line)
             if m_q:
                 qnum = int(m_q.group(1))
                 question_counts[qnum] = question_counts.get(qnum, 0) + 1
                 total_answers += 1
 
-        # session end marker (used for duration)
         elif "Session submitted" in line:
             events.append((sid, current_time, "SUBMIT"))
 
@@ -102,14 +113,18 @@ for block in students:
     # Metrics
     # ----------------------------
 
-    # duration
     if events:
         times = [e[1] for e in events]
         duration = max(times) - min(times)
     else:
         duration = 0
 
-    # off-task metrics
+    total_test_time = duration
+
+    # ----------------------------
+    # Off-task metrics
+    # ----------------------------
+
     num_switches = len(off_times)
     total_off = sum(off_times)
     avg_off = total_off / num_switches if num_switches else 0
@@ -121,6 +136,11 @@ for block in students:
         variance = 0
 
     switch_rate = num_switches / (duration / 60) if duration > 0 else 0
+    switch_density = switch_rate  # alias (clearer naming)
+
+    # classify switches
+    rapid_switch_count = sum(1 for t in off_times if t <= 5)
+    long_switch_count = sum(1 for t in off_times if t >= 15)
 
     # ----------------------------
     # Timing metrics
@@ -136,7 +156,6 @@ for block in students:
         std_gap = (sum((g - mean_gap) ** 2 for g in gaps) / len(gaps)) ** 0.5
         cv_gap = std_gap / mean_gap if mean_gap > 0 else 0
 
-        # thresholds
         long_gap_threshold = mean_gap * 2
         burst_threshold = mean_gap * 0.5
 
@@ -145,6 +164,19 @@ for block in students:
     else:
         mean_gap = std_gap = cv_gap = 0
         long_gap_count = burst_count = 0
+
+    # ----------------------------
+    # Post-resume behavior (KEY CHEATING SIGNAL)
+    # ----------------------------
+
+    if post_resume_answer_times:
+        post_resume_avg = sum(post_resume_answer_times) / len(post_resume_answer_times)
+        post_resume_fast = sum(1 for t in post_resume_answer_times if t <= 5)
+        post_resume_ratio = post_resume_fast / len(post_resume_answer_times)
+    else:
+        post_resume_avg = 0
+        post_resume_fast = 0
+        post_resume_ratio = 0
 
     # ----------------------------
     # Revision metrics
@@ -171,17 +203,23 @@ for block in students:
         total_off,
         avg_off,
         variance,
-        switch_rate,
+        switch_density,
+        rapid_switch_count,
+        long_switch_count,
         mean_gap,
         std_gap,
         cv_gap,
         long_gap_count,
         burst_count,
+        post_resume_avg,
+        post_resume_fast,
+        post_resume_ratio,
         total_answers,
         unique_questions,
         revisions,
         revision_ratio,
-        max_revisions
+        max_revisions,
+        total_test_time
     ])
 
     event_rows.extend(events)
@@ -204,17 +242,23 @@ with open(METRICS_OUT, "w", newline="") as f:
         "total_off_time_sec",
         "avg_off_time_sec",
         "off_time_variance",
-        "switch_rate_per_min",
+        "switch_density_per_min",
+        "rapid_switch_count",
+        "long_switch_count",
         "mean_gap_sec",
         "std_gap_sec",
         "cv_gap",
         "long_gap_count",
         "burst_count",
+        "post_resume_avg_sec",
+        "post_resume_fast_count",
+        "post_resume_fast_ratio",
         "total_answers",
         "unique_questions",
         "revisions",
         "revision_ratio",
-        "max_revisions_single_q"
+        "max_revisions_single_q",
+        "total_test_time_sec"
     ])
     writer.writerows(metric_rows)
 
